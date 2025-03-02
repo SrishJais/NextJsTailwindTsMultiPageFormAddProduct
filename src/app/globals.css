@@ -1,0 +1,30 @@
+/* Google font  */
+/* @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@400,500,600&display=swap'); */
+/* &display=swap extraadd in font at end  */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* Note: overflox-x is used in html,body tag to avoid unwanted horizontal scroll during animation */
+html,
+body {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+body {
+  /* clip is used so that overflow property does not restrict position sticky */
+  overflow-x: clip;
+}
+
+/* Hide arrows for type="number" input */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

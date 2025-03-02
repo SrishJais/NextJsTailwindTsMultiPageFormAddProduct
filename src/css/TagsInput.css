@@ -1,0 +1,43 @@
+.tagify {
+    /* tags */
+    --tags-border-color: #EFEFEF;
+    --tags-hover-border-color: #EFEFEF;
+    --tags-focus-border-color: #EFEFEF;
+    --tag-border-radius: 6px;
+    --tag-bg: #EFEFEF;
+    --tag-hover: #EFEFEF;
+    --tag-text-color: #000000;
+    --tag-invalid-color: #EFEFEF;
+    --tag-invalid-bg: #EFEFEF;
+    --tag-remove-btn-color: black;
+    --tag-remove-focus-btn-color: black;
+    --tag-remove-btn-bg: none;
+    --tag-remove-btn-bg--hover: #EFEFEF;
+    --tag-remove-bg: #EFEFEF;
+    /* input elm  */
+    border: 1px solid #0000002E;
+    border-radius: 8px;
+    /* flex-wrap: nowrap; */
+    flex-wrap: nowrap;
+     /* Ensures tags remain in one line */
+    overflow-x: auto;
+    overflow-y: hidden;
+    /* hide scrollbar  */
+    scrollbar-width: none;
+}
+
+  
+/* input elm on focus  */
+.input:focus, .input:focus-within {
+    box-shadow: none;
+    border-color: #0000002E;
+    outline-style: none;
+    outline-width: 0px;
+    outline-offset: 0px;
+    outline-color: none;
+}
+/* avoid tag's text by wrapping to next line if multiword text for a tag  */
+.tagify__tag>div>* {
+    white-space: nowrap;
+
+}

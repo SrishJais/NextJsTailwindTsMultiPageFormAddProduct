@@ -1,0 +1,38 @@
+/* ----------------------- product layout---------------------  */
+/* remove underline in breadcrubs menu  */
+.breadcrumbs > ul > li > a:hover,
+.breadcrumbs > ol > li > a:hover {
+  text-decoration-line: none;
+}
+/* Active class for menu item link  */
+.breadcrumbs .myActiveBreadcrumbsClass {
+  @apply bg-primary-medium;
+  @apply text-primary;
+  border-radius: 8px;
+}
+/* hide scrollbar but still scroll  */
+.breadcrumbs {
+  scrollbar-width: none;
+}
+/* ---------------product combination table ------------------------  */
+.table :where(th, td) {
+  padding-right: 0rem;
+  padding-bottom: 0rem;
+}
+.table tbody :where(th) {
+  padding-left: 0rem;
+}
+
+/* remove table border  */
+.table
+  :where(thead tr, tbody tr:not(:last-child), tbody tr:first-child:last-child) {
+  border-bottom-width: 0px;
+  --tw-border-opacity: 0;
+}
+/* combination quantity disabled bg */
+.input:has(> input[disabled]),
+.input-disabled,
+.input:disabled,
+.input[disabled] {
+  @apply bg-myborder;
+}

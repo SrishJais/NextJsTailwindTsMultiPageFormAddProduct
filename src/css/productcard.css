@@ -1,0 +1,8 @@
+
+.card.image-full:before {
+    z-index: 0;
+}
+.card.image-full > .card-body {
+
+    z-index: 0;
+}

@@ -1,0 +1,6 @@
+nav .myActiveMenuClass{
+    @apply bg-primary-light;
+    @apply text-primary;
+    border-radius: 8px;
+    
+}
